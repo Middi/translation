@@ -1,4 +1,7 @@
-h1 index file
-each datas, i in data.reverse()
-    h1= datas.polish
-    
+extends layout
+
+block content
+    div.ui.container
+        h1 Heading One
+        each datas, i in data
+            p= datas.polish
