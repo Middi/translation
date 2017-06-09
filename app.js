@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -12,12 +13,16 @@ app.set("view engine", "pug");
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
 
+// Set Public Folder
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 // MONGOOSE/MODEL CONFIG
 var transSchema = new mongoose.Schema({
     polish: String,
     english: String,
-    phonetic: String
+    phonetic: String,
+    category: String
 }, {collection: 'polish'});
 
 var Trans = mongoose.model("polish", transSchema);
