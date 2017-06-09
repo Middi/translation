@@ -4,13 +4,13 @@
   "description": "Translation App for beginners using databases to store translations",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Middi/translation.git"
   },
-  "author": "",
+  "author": "Richard Middleton",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Middi/translation/issues"
@@ -22,5 +22,8 @@
     "mongoose": "^4.10.5",
     "pug": "^2.0.0-rc.2",
     "semantic-ui": "^2.2.10"
+  },
+  "engines": {
+    "node": "6.10.0"
   }
 }

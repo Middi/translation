@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 var port = process.env.PORT || 3000;
 
 // APP CONFIG
-mongoose.connect("mongodb://localhost/translation");
+mongoose.connect("mongodb://middi:youandme123@ds163701.mlab.com:63701/translation");
 app.set("view engine", "pug");
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
