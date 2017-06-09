@@ -23,7 +23,7 @@ var
   fs             = require('fs'),
   mkdirp         = require('mkdirp'),
   path           = require('path'),
-  runSequence    = require('run-sequence'),
+  runSequence = require('run-sequence').use(gulp),
 
   // gulp dependencies
   chmod          = require('gulp-chmod'),
