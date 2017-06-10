@@ -10,19 +10,14 @@ header {
 
 nav {
     padding: 12px;
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
     z-index: 100;
     text-align: center;
 }
 
 
-.container-main {
-    margin-top: 60px;
-}
-
-
-
+.container-main {margin-top: 60px}
 
 // --- TABLE COLOURED --- //
 
@@ -95,7 +90,7 @@ nav {
 }
 
 .nav-tabs {
-     overflow-x: auto;
+    overflow-x: auto;
     overflow-y: hidden;
     display: -webkit-box;  
     display: -moz-box;

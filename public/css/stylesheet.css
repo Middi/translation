@@ -31,7 +31,7 @@ header {
 
 nav {
   padding: 12px;
-  width: 400px;
+  max-width: 400px;
   margin: 0 auto;
   z-index: 100;
   text-align: center; }
