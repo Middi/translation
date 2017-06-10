@@ -115,3 +115,7 @@ nav {
 
 table thead tr th {
   padding: 20px 10px !important; }
+
+table {
+  table-layout: fixed;
+  word-wrap: break-word; }
