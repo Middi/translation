@@ -5,7 +5,7 @@
 // ---- Nav Bar ---- /
 header {
     width: 100%;
-    background-color: black;
+    background-color: rgba(193, 24, 8, 1.0);
 }
 
 nav {
@@ -14,6 +14,11 @@ nav {
     margin: 0 auto;
     z-index: 100;
     text-align: center;
+    img {
+        width: 30px;
+        height: auto;
+    margin: 0 4px 1px;
+    }
 }
 
 

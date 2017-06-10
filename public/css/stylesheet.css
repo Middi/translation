@@ -27,7 +27,7 @@ h1 span {
 
 header {
   width: 100%;
-  background-color: black; }
+  background-color: #c11808; }
 
 nav {
   padding: 12px;
@@ -35,6 +35,10 @@ nav {
   margin: 0 auto;
   z-index: 100;
   text-align: center; }
+  nav img {
+    width: 30px;
+    height: auto;
+    margin: 0 4px 1px; }
 
 .container-main {
   margin-top: 60px; }
