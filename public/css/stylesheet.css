@@ -1,0 +1,68 @@
+.ui.table tr.White,
+.ui.table tr.Black,
+.ui.tabe tr.Red,
+.ui.table tr.Yellow,
+.ui.table tr.Green,
+.ui.table tr.Blue,
+.ui.table tr.Orange,
+.ui.table tr.Colours {
+  color: #212121;
+  transition: all 0.4s ease;
+  cursor: default !important; }
+
+.ui.table tr.Black {
+  color: #FFFFFF !important;
+  background: #212121; }
+
+.ui.selectable.table tbody tr.Black:hover {
+  color: #FFFFFF !important;
+  background: #2e2e2e !important; }
+
+.ui.table tr.White {
+  background: #FFFFFF !important;
+  color: #212121 !important; }
+
+.ui.selectable.table tbody tr.White:hover {
+  background: #f2f2f2 !important; }
+
+.ui.table tr.Red {
+  background: #ef5350 !important; }
+
+.ui.selectable.table tbody tr.Red:hover {
+  background: #f0615e !important; }
+
+.ui.table tr.Yellow {
+  background: #FFF176 !important; }
+
+.ui.selectable.table tbody tr.Yellow:hover {
+  background: #fff385 !important; }
+
+.ui.table tr.Green {
+  background: #81C784 !important; }
+
+.ui.selectable.table tbody tr.Green:hover {
+  background: #8ccc8e !important; }
+
+.ui.table tr.Blue {
+  background: #64B5F6 !important; }
+
+.ui.selectable.table tbody tr.Blue:hover {
+  background: #72bcf7 !important; }
+
+.ui.table tr.Orange {
+  background: #FFB74D !important; }
+
+.ui.selectable.table tbody tr.Orange:hover {
+  background: #ffbd5c !important; }
+
+.ui.table tr.Grey {
+  background: #E0E0E0 !important; }
+
+.ui.selectable.table tbody tr.Grey:hover {
+  background: #e8e8e8 !important; }
+
+.ui.table tr.Colours {
+  background: #f2f2f2 !important; }
+
+.ui.selectable.table tbody tr.Colours:hover {
+  background: #eaeaea !important; }

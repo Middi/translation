@@ -6,35 +6,61 @@ block content
         .ui.top.attached.tabular.menu
             a.item.active(data-tab='first') Colors
             a.item(data-tab='second') Days
-            a.item(data-tab='third') Third
+            a.item(data-tab='third') Months
+            a.item(data-tab='fourth') Numbers
         .ui.bottom.attached.tab.segment.active(data-tab='first')
-            table.ui.striped.table.selectable
+            table.ui.striped.table.selectable.celled.fixed.single.line
                 thead
                     tr
-                        th Polish
                         th English
+                        th Polish
                         th Phonetics
                 tbody
                     each datas, i in data
                         if datas.category =='Colors'
-                            tr
-                                td= datas.polish
+                            tr(class=datas.english)
                                 td= datas.english
+                                td= datas.polish
                                 td= datas.phonetic
         .ui.bottom.attached.tab.segment(data-tab='second')
-            table.ui.striped.table.selectable
+            table.ui.striped.table.selectable.celled.fixed.single.line
                 thead
                     tr
-                        th Polish
                         th English
+                        th Polish
                         th Phonetics
                 tbody
                     each datas, i in data
                         if datas.category =='Days'
                             tr
-                                td= datas.polish
                                 td= datas.english
+                                td= datas.polish
                                 td= datas.phonetic
-            
         .ui.bottom.attached.tab.segment(data-tab='third')
-            | Third
+            table.ui.striped.table.selectable.celled.fixed.single.line
+                thead
+                    tr
+                        th English
+                        th Polish
+                        th Phonetics
+                tbody
+                    each datas, i in data
+                        if datas.category =='Days'
+                            tr
+                                td= datas.english
+                                td= datas.polish
+                                td= datas.phonetic
+        .ui.bottom.attached.tab.segment(data-tab='fourth')
+            table.ui.striped.table.selectable.celled.fixed.single.line
+                thead
+                    tr
+                        th English
+                        th Polish
+                        th Phonetics
+                tbody
+                    each datas, i in data
+                        if datas.category =='Days'
+                            tr
+                                td= datas.english
+                                td= datas.polish
+                                td= datas.phonetic
