@@ -1,66 +1,174 @@
 extends layout
 
 block content
-    div.ui.container
-        h1 Heading One
-        .ui.top.attached.tabular.menu
-            a.item.active(data-tab='first') Colors
-            a.item(data-tab='second') Days
-            a.item(data-tab='third') Months
-            a.item(data-tab='fourth') Numbers
-        .ui.bottom.attached.tab.segment.active(data-tab='first')
-            table.ui.striped.table.selectable.celled.fixed.single.line
-                thead
-                    tr
-                        th English
-                        th Polish
-                        th Phonetics
-                tbody
-                    each datas, i in data
-                        if datas.category =='Colors'
-                            tr(class=datas.english)
-                                td= datas.english
-                                td= datas.polish
-                                td= datas.phonetic
-        .ui.bottom.attached.tab.segment(data-tab='second')
-            table.ui.striped.table.selectable.celled.fixed.single.line
-                thead
-                    tr
-                        th English
-                        th Polish
-                        th Phonetics
-                tbody
-                    each datas, i in data
-                        if datas.category =='Days'
+    div.container
+        h1 PoleReference
+        // Nav tabs
+        ul.nav.nav-tabs(role='tablist')
+            li.active(role='presentation')
+                a(href='#numbers', aria-controls='home', role='tab', data-toggle='tab') Numbers
+            li(role='presentation')
+                a(href='#time', aria-controls='profile', role='tab', data-toggle='tab') Time
+            li(role='presentation')
+                a(href='#days', aria-controls='messages', role='tab', data-toggle='tab') Days
+            li(role='presentation')
+                a(href='#months', aria-controls='settings', role='tab', data-toggle='tab') Months
+            li(role='presentation')
+                a(href='#colours', aria-controls='settings', role='tab', data-toggle='tab') Colours
+            li(role='presentation')
+                a(href='#misc', aria-controls='settings', role='tab', data-toggle='tab') Misc
+        // Tab panes
+        .tab-content
+            #numbers.tab-pane.active(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
                             tr
-                                td= datas.english
-                                td= datas.polish
-                                td= datas.phonetic
-        .ui.bottom.attached.tab.segment(data-tab='third')
-            table.ui.striped.table.selectable.celled.fixed.single.line
-                thead
-                    tr
-                        th English
-                        th Polish
-                        th Phonetics
-                tbody
-                    each datas, i in data
-                        if datas.category =='Months'
+                                th English
+                                th Polish
+                                th Phonetics
+                        tbody
+                            each datas, i in data
+                                if datas.category =='Numbers'
+                                    tr
+                                        td= datas.english
+                                        td= datas.polish
+                                        td= datas.phonetic
+            #time.tab-pane(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
                             tr
-                                td= datas.english
-                                td= datas.polish
-                                td= datas.phonetic
-        .ui.bottom.attached.tab.segment(data-tab='fourth')
-            table.ui.striped.table.selectable.celled.fixed.single.line
-                thead
-                    tr
-                        th English
-                        th Polish
-                        th Phonetics
-                tbody
-                    each datas, i in data
-                        if datas.category =='Days'
+                                th English
+                                th Polish
+                                th Phonetics
+                        tbody
+                            each datas, i in data
+                                if datas.category =='Time'
+                                    tr
+                                        td= datas.english
+                                        td= datas.polish
+                                        td= datas.phonetic
+            #days.tab-pane(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
                             tr
-                                td= datas.english
-                                td= datas.polish
-                                td= datas.phonetic
+                                th English
+                                th Polish
+                                th Phonetics
+                        tbody
+                            each datas, i in data
+                                if datas.category =='Days'
+                                    tr
+                                        td= datas.english
+                                        td= datas.polish
+                                        td= datas.phonetic
+            #months.tab-pane(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
+                            tr
+                                th English
+                                th Polish
+                                th Phonetics
+                        tbody
+                            each datas, i in data
+                                if datas.category =='Months'
+                                    tr
+                                        td= datas.english
+                                        td= datas.polish
+                                        td= datas.phonetic
+            #colours.tab-pane(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
+                            tr
+                                th English
+                                th Polish
+                                th Phonetics
+                        tbody
+                            each datas, i in data
+                                if datas.category =='Colors'
+                                    tr(class=datas.english)
+                                        td= datas.english
+                                        td= datas.polish
+                                        td= datas.phonetic
+            #misc.tab-pane(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
+                            tr
+                                th English
+                                th Polish
+                                th Phonetics
+                        tbody
+                            each datas, i in data
+                                if datas.category =='Misc'
+                                    tr
+                                        td= datas.english
+                                        td= datas.polish
+                                        td= datas.phonetic
+
+
+        //- .ui.top.attached.tabular.menu
+        //-     a.item.active(data-tab='first') Colors
+        //-     a.item(data-tab='second') Days
+        //-     a.item(data-tab='third') Months
+        //-     a.item(data-tab='fourth') Numbers
+        //- .ui.bottom.attached.tab.segment.active(data-tab='first')
+        //-     table.ui.striped.table.selectable.celled.fixed.single.line
+        //-         thead
+        //-             tr
+        //-                 th English
+        //-                 th Polish
+        //-                 th Phonetics
+        //-         tbody
+        //-             each datas, i in data
+        //-                 if datas.category =='Colors'
+        //-                     tr(class=datas.english)
+        //-                         td= datas.english
+        //-                         td= datas.polish
+        //-                         td= datas.phonetic
+        //- .ui.bottom.attached.tab.segment(data-tab='second')
+        //-     table.ui.striped.table.selectable.celled.fixed.single.line
+        //-         thead
+        //-             tr
+        //-                 th English
+        //-                 th Polish
+        //-                 th Phonetics
+        //-         tbody
+        //-             each datas, i in data
+        //-                 if datas.category =='Days'
+        //-                     tr
+        //-                         td= datas.english
+        //-                         td= datas.polish
+        //-                         td= datas.phonetic
+        //- .ui.bottom.attached.tab.segment(data-tab='third')
+        //-     table.ui.striped.table.selectable.celled.fixed.single.line
+        //-         thead
+        //-             tr
+        //-                 th English
+        //-                 th Polish
+        //-                 th Phonetics
+        //-         tbody
+        //-             each datas, i in data
+        //-                 if datas.category =='Months'
+        //-                     tr
+        //-                         td= datas.english
+        //-                         td= datas.polish
+        //-                         td= datas.phonetic
+        //- .ui.bottom.attached.tab.segment(data-tab='fourth')
+        //-     table.ui.striped.table.selectable.celled.fixed.single.line
+        //-         thead
+        //-             tr
+        //-                 th English
+        //-                 th Polish
+        //-                 th Phonetics
+        //-         tbody
+        //-             each datas, i in data
+        //-                 if datas.category =='Days'
+        //-                     tr
+        //-                         td= datas.english
+        //-                         td= datas.polish
+        //-                         td= datas.phonetic

@@ -3,99 +3,94 @@
 // --- TABLE COLOURED --- //
 
 
-.ui.table tr.White,
-.ui.table tr.Black,
-.ui.tabe tr.Red,
-.ui.table tr.Yellow,
-.ui.table tr.Green,
-.ui.table tr.Blue,
-.ui.table tr.Orange,
-.ui.table tr.Colours {
+.table tr.White,
+.table tr.Black,
+.tabe tr.Red,
+.table tr.Yellow,
+.table tr.Green,
+.table tr.Blue,
+.table tr.Orange,
+.table tr.Colours {
   color: $black;
   transition: all 0.4s ease;
   cursor: default !important;
 }
 
 // BLACK
-.ui.table tr.Black {
+.table tr.Black {
   color: $white !important;
-  background: $black;
+  background: $black!important;
 }
 
-.ui.selectable.table tbody tr.Black:hover {
-  color: $white !important;
-  background: lighten($black, 5) !important;
-}
 
 // WHITE
-.ui.table tr.White {
+.table tr.White {
   background: $white !important;
   color: $black !important;
 }
 
-.ui.selectable.table tbody tr.White:hover {
-  background: darken($white, 5) !important;
-}
 
 // RED
-.ui.table tr.Red {
+.table tr.Red {
   background: $red !important;
 }
 
-.ui.selectable.table tbody tr.Red:hover {
-  background: lighten($red, 3) !important;
-}
 
 // YELLOW
-.ui.table tr.Yellow {
+.table tr.Yellow {
   background: $yellow !important;
 }
 
-.ui.selectable.table tbody tr.Yellow:hover {
-  background: lighten($yellow, 3) !important;
-}
 
 // GREEN
-.ui.table tr.Green {
+.table tr.Green {
   background: $green !important;
 }
 
-.ui.selectable.table tbody tr.Green:hover {
-  background: lighten($green, 3) !important;
-}
-
 // BLUE
-.ui.table tr.Blue {
+.table tr.Blue {
   background: $blue !important;
 }
 
-.ui.selectable.table tbody tr.Blue:hover {
-  background: lighten($blue, 3) !important;
-}
 
 // ORANGE
-.ui.table tr.Orange {
+.table tr.Orange {
   background: $orange !important;
 }
 
-.ui.selectable.table tbody tr.Orange:hover {
-  background: lighten($orange, 3) !important;
-}
 
 // GREY
-.ui.table tr.Grey {
+.table tr.Grey {
   background: $grey !important;
 }
 
-.ui.selectable.table tbody tr.Grey:hover {
-  background: lighten($grey, 3) !important;
-}
 
 // COLOURS
-.ui.table tr.Colours {
+.table tr.Colours {
   background: lighten($grey, 7) !important;
 }
 
-.ui.selectable.table tbody tr.Colours:hover {
-  background: lighten($grey, 4) !important;
+
+
+.nav-tabs>li>a {
+    color: $black;
+}
+
+.nav-tabs>li.active>a {
+    color: $black;
+    font-weight: 700;
+}
+
+.tab-pane {
+    padding: 14px;
+}
+
+.tab-content {
+    border: 1px solid $grey;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+table thead tr th {
+    padding: 20px 10px !important;
 }
