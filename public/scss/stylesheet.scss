@@ -32,70 +32,59 @@ nav {
 
 .table tr.White,
 .table tr.Black,
-.tabe tr.Red,
+.table tr.Red,
 .table tr.Yellow,
 .table tr.Green,
 .table tr.Blue,
 .table tr.Orange,
-.table tr.Colours {
-  color: $black;
-  transition: all 0.4s ease;
-  cursor: default !important;
+.table tr.Colours,
+.table tr.Grey {
+    font-weight: 600;
+    color: $black;
+    transition: all 0.4s ease;
+    cursor: default !important;
 }
 
-// BLACK
-.table tr.Black {
-  color: $white !important;
-  background: $black!important;
-}
-
-
-// WHITE
-.table tr.White {
-  background: $white !important;
+// BLACK & WHITE
+.table tr.Black, .table tr.White, .table tr.Colours {
   color: $black !important;
 }
 
 
 // RED
-.table tr.Red {
-  background: $red !important;
+.table tr.Red, .red {
+  color: $red !important;
 }
 
 
 // YELLOW
-.table tr.Yellow {
-  background: $yellow !important;
+.table tr.Yellow, .yellow {
+  color: darken($yellow, 25) !important;
 }
 
 
 // GREEN
-.table tr.Green {
-  background: $green !important;
+.table tr.Green, .green {
+  color: $green !important;
 }
 
 // BLUE
-.table tr.Blue {
-  background: $blue !important;
+.table tr.Blue, .blue {
+   color: $blue !important;
 }
 
 
 // ORANGE
-.table tr.Orange {
-  background: $orange !important;
+.table tr.Orange, .orange {
+ color: $orange !important;
 }
 
 
 // GREY
-.table tr.Grey {
-  background: $grey !important;
+.table tr.Grey, .grey {
+  color: darken($grey, 30) !important;
 }
 
-
-// COLOURS
-.table tr.Colours {
-  background: lighten($grey, 7) !important;
-}
 
 .nav-tabs {
     overflow-x: auto;

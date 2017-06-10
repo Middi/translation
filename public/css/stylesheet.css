@@ -49,44 +49,38 @@ nav {
 
 .table tr.White,
 .table tr.Black,
-.tabe tr.Red,
+.table tr.Red,
 .table tr.Yellow,
 .table tr.Green,
 .table tr.Blue,
 .table tr.Orange,
-.table tr.Colours {
+.table tr.Colours,
+.table tr.Grey {
+  font-weight: 600;
   color: #212121;
   transition: all 0.4s ease;
   cursor: default !important; }
 
-.table tr.Black {
-  color: #FFFFFF !important;
-  background: #212121 !important; }
-
-.table tr.White {
-  background: #FFFFFF !important;
+.table tr.Black, .table tr.White, .table tr.Colours {
   color: #212121 !important; }
 
-.table tr.Red {
-  background: #ef5350 !important; }
+.table tr.Red, .red {
+  color: #ef5350 !important; }
 
-.table tr.Yellow {
-  background: #FFF176 !important; }
+.table tr.Yellow, .yellow {
+  color: #f6dc00 !important; }
 
-.table tr.Green {
-  background: #81C784 !important; }
+.table tr.Green, .green {
+  color: #81C784 !important; }
 
-.table tr.Blue {
-  background: #64B5F6 !important; }
+.table tr.Blue, .blue {
+  color: #64B5F6 !important; }
 
-.table tr.Orange {
-  background: #FFB74D !important; }
+.table tr.Orange, .orange {
+  color: #FFB74D !important; }
 
-.table tr.Grey {
-  background: #E0E0E0 !important; }
-
-.table tr.Colours {
-  background: #f2f2f2 !important; }
+.table tr.Grey, .grey {
+  color: #949393 !important; }
 
 .nav-tabs {
   overflow-x: auto;
