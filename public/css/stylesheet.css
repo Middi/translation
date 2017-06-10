@@ -17,14 +17,19 @@ h1 {
   font-size: 1.6em;
   font-weight: 300;
   line-height: 1;
+  color: #FFFFFF;
   margin: 0; }
 
 h1 span {
   font-weight: 700;
-  color: #212121; }
+  color: #FFFFFF; }
 
 a {
   color: #FFFFFF; }
+
+h1 span {
+  font-weight: 700;
+  color: #FFFFFF !important; }
 
 header {
   width: 100%;
