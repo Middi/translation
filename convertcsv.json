@@ -1,0 +1,446 @@
+[
+ {
+   "polish": "Liczby",
+   "english": "Numbers",
+   "phonetic": "LeechBeh",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Jeden",
+   "english": "One",
+   "phonetic": "Yeden",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Dwa",
+   "english": "Two",
+   "phonetic": "Duva",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Trzy",
+   "english": "Three",
+   "phonetic": "T-Sh",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Cztery",
+   "english": "Four",
+   "phonetic": "ChTerry",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Pięć",
+   "english": "Five",
+   "phonetic": "PeeEnch",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Sześć",
+   "english": "Six",
+   "phonetic": "Schessch",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Siedem",
+   "english": "Seven",
+   "phonetic": "Shedem",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Osiem",
+   "english": "Eight",
+   "phonetic": "Osham",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Dziewięć",
+   "english": "Nine",
+   "phonetic": "JevvyEnch",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Dziesięć",
+   "english": "Ten",
+   "phonetic": "JehSchench",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Dwadzieścia",
+   "english": "Twenty",
+   "phonetic": "DvaJestCha",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Trzydzieści",
+   "english": "Thirty",
+   "phonetic": "TreDjesChi",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Czterdzieści",
+   "english": "Forty",
+   "phonetic": "ChTairJestChi",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Pięćdziesiąt",
+   "english": "Fifty",
+   "phonetic": "PeeEnnJestChant",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Sześćdziesiąt",
+   "english": "Sixty",
+   "phonetic": "SchezJestChant",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Siedemdziesiąt",
+   "english": "Seventy",
+   "phonetic": "ShedemJestChant",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Osiemdziesiąt",
+   "english": "Eighty",
+   "phonetic": "OshamJestChant",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Dziewięćdziesiąt",
+   "english": "Ninety",
+   "phonetic": "JehvenJestChant",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Sto",
+   "english": "Hundred",
+   "phonetic": "StO",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Tysiąc",
+   "english": "Thousand",
+   "phonetic": "T-Shanch",
+   "category": "Numbers"
+ },
+ {
+   "polish": "Milion",
+   "english": "Million",
+   "phonetic": "Meelion",
+   "category": "Numbers"
+ },
+ {
+   "polish": "",
+   "english": "",
+   "phonetic": "",
+   "category": ""
+ },
+ {
+   "polish": "Kolory",
+   "english": "Colours",
+   "phonetic": "KullorE",
+   "category": "Colors"
+ },
+ {
+   "polish": "Biały",
+   "english": "White",
+   "phonetic": "Beoweh",
+   "category": "Colors"
+ },
+ {
+   "polish": "Czarny",
+   "english": "Black",
+   "phonetic": "Charnie",
+   "category": "Colors"
+ },
+ {
+   "polish": "Czerwony",
+   "english": "Red",
+   "phonetic": "SherVonnie",
+   "category": "Colors"
+ },
+ {
+   "polish": "Żółty",
+   "english": "Yellow",
+   "phonetic": "ZowTeh",
+   "category": "Colors"
+ },
+ {
+   "polish": "Zielony",
+   "english": "Green",
+   "phonetic": "ZeyLonnie",
+   "category": "Colors"
+ },
+ {
+   "polish": "Niebieski",
+   "english": "Blue",
+   "phonetic": "NieBieski",
+   "category": "Colors"
+ },
+ {
+   "polish": "Pomarańczowy",
+   "english": "Orange",
+   "phonetic": "PomarEnChovie",
+   "category": "Colors"
+ },
+ {
+   "polish": "Szary",
+   "english": "Grey",
+   "phonetic": "Charay",
+   "category": "Colors"
+ },
+ {
+   "polish": "",
+   "english": "",
+   "phonetic": "",
+   "category": ""
+ },
+ {
+   "polish": "Dni",
+   "english": "Days",
+   "phonetic": "dKnee",
+   "category": "Days"
+ },
+ {
+   "polish": "Poniedziałek",
+   "english": "Monday",
+   "phonetic": "PonieJowek",
+   "category": "Days"
+ },
+ {
+   "polish": "Wtorek",
+   "english": "Tuesday",
+   "phonetic": "VeTourEk",
+   "category": "Days"
+ },
+ {
+   "polish": "Środa",
+   "english": "Wednesday",
+   "phonetic": "ShiRoda",
+   "category": "Days"
+ },
+ {
+   "polish": "Czwartek",
+   "english": "Thursday",
+   "phonetic": "TchFarTek",
+   "category": "Days"
+ },
+ {
+   "polish": "Piątek",
+   "english": "Friday",
+   "phonetic": "PeeonTek",
+   "category": "Days"
+ },
+ {
+   "polish": "Sobota",
+   "english": "Saturday",
+   "phonetic": "SoBotta",
+   "category": "Days"
+ },
+ {
+   "polish": "Niedziela",
+   "english": "Sunday",
+   "phonetic": "KneeGella",
+   "category": "Days"
+ },
+ {
+   "polish": "",
+   "english": "",
+   "phonetic": "",
+   "category": ""
+ },
+ {
+   "polish": "Miesiące",
+   "english": "Months",
+   "phonetic": "MeShonSe",
+   "category": "Months"
+ },
+ {
+   "polish": "Styczeń",
+   "english": "January",
+   "phonetic": "StiChen",
+   "category": "Months"
+ },
+ {
+   "polish": "Luty",
+   "english": "February",
+   "phonetic": "LutE",
+   "category": "Months"
+ },
+ {
+   "polish": "Marzec",
+   "english": "March",
+   "phonetic": "MarZJetcs",
+   "category": "Months"
+ },
+ {
+   "polish": "Kwiecień",
+   "english": "April",
+   "phonetic": "KavieCehn",
+   "category": "Months"
+ },
+ {
+   "polish": "Maj",
+   "english": "May",
+   "phonetic": "My",
+   "category": "Months"
+ },
+ {
+   "polish": "Czerwiec",
+   "english": "June",
+   "phonetic": "ChairVietz",
+   "category": "Months"
+ },
+ {
+   "polish": "Lipiec",
+   "english": "July",
+   "phonetic": "LeePeeEtz",
+   "category": "Months"
+ },
+ {
+   "polish": "Sierpień",
+   "english": "August",
+   "phonetic": "SharePien",
+   "category": "Months"
+ },
+ {
+   "polish": "Wrzesień",
+   "english": "September",
+   "phonetic": "VShareShen",
+   "category": "Months"
+ },
+ {
+   "polish": "Październik",
+   "english": "October",
+   "phonetic": "PazJernick",
+   "category": "Months"
+ },
+ {
+   "polish": "Listopad",
+   "english": "November",
+   "phonetic": "Listopad",
+   "category": "Months"
+ },
+ {
+   "polish": "Grudzień",
+   "english": "December",
+   "phonetic": "GruJen",
+   "category": "Months"
+ },
+ {
+   "polish": "",
+   "english": "",
+   "phonetic": "",
+   "category": ""
+ },
+ {
+   "polish": "Ja",
+   "english": "Me",
+   "phonetic": "Ya",
+   "category": "Misc"
+ },
+ {
+   "polish": "Ty",
+   "english": "You",
+   "phonetic": "T",
+   "category": "Misc"
+ },
+ {
+   "polish": "Wy",
+   "english": "You (Plural)",
+   "phonetic": "Ve",
+   "category": "Misc"
+ },
+ {
+   "polish": "Oni",
+   "english": "They",
+   "phonetic": "Oni",
+   "category": "Misc"
+ },
+ {
+   "polish": "One",
+   "english": "They (Girls)",
+   "phonetic": "OnEh",
+   "category": "Misc"
+ },
+ {
+   "polish": "Tamci",
+   "english": "Those",
+   "phonetic": "TamChee",
+   "category": "Misc"
+ },
+ {
+   "polish": "Tamte",
+   "english": "Those (Girls)",
+   "phonetic": "TamTeh",
+   "category": "Misc"
+ },
+ {
+   "polish": "",
+   "english": "",
+   "phonetic": "",
+   "category": ""
+ },
+ {
+   "polish": "Czasy",
+   "english": "Times",
+   "phonetic": "ChaSeh",
+   "category": "Time"
+ },
+ {
+   "polish": "Sekunda",
+   "english": "Second",
+   "phonetic": "Sekonda",
+   "category": "Time"
+ },
+ {
+   "polish": "Minuta",
+   "english": "Minute",
+   "phonetic": "Minuta",
+   "category": "Time"
+ },
+ {
+   "polish": "Godzina",
+   "english": "Hour",
+   "phonetic": "GodJena",
+   "category": "Time"
+ },
+ {
+   "polish": "Dzień",
+   "english": "Day",
+   "phonetic": "DJen",
+   "category": "Time"
+ },
+ {
+   "polish": "Tydzień",
+   "english": "Week",
+   "phonetic": "Th-DJen",
+   "category": "Time"
+ },
+ {
+   "polish": "Miesiąc",
+   "english": "Month",
+   "phonetic": "MeShonSe",
+   "category": "Time"
+ },
+ {
+   "polish": "Rok",
+   "english": "Year",
+   "phonetic": "Rock",
+   "category": "Time"
+ },
+ {
+   "polish": "Dekada",
+   "english": "Decade",
+   "phonetic": "Deckada",
+   "category": "Time"
+ },
+ {
+   "polish": "Wiek",
+   "english": "Century",
+   "phonetic": "VeeEk",
+   "category": "Time"
+ }
+]
