@@ -15,7 +15,7 @@ h2,
 h3,
 h4 {
     font-family: 'Open Sans';
-    font-weight: 700;
+    font-weight: 500;
     color: $black;
 }
 
@@ -27,16 +27,11 @@ h1 {
     margin: 0;
 }
 
-h1 span {
-    font-weight: 700;
-    color: $white;
-}
-
 a {
     color: $white;
 }
 
 h1 span {
-    font-weight: 700;
+    font-weight: 600;
     color: $white!important;
 }

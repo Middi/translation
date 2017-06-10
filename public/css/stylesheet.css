@@ -10,7 +10,7 @@ h2,
 h3,
 h4 {
   font-family: 'Open Sans';
-  font-weight: 700;
+  font-weight: 500;
   color: #212121; }
 
 h1 {
@@ -20,15 +20,11 @@ h1 {
   color: #FFFFFF;
   margin: 0; }
 
-h1 span {
-  font-weight: 700;
-  color: #FFFFFF; }
-
 a {
   color: #FFFFFF; }
 
 h1 span {
-  font-weight: 700;
+  font-weight: 600;
   color: #FFFFFF !important; }
 
 header {
