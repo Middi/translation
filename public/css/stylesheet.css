@@ -96,8 +96,20 @@ nav {
   color: #212121; }
 
 .nav-tabs > li.active > a {
-  color: #212121;
-  font-weight: 700; }
+  color: #FFFFFF;
+  font-weight: 500;
+  background-color: #c11808;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
+  color: #FFFFFF;
+  font-weight: 500;
+  background-color: #c11808; }
+
+.nav-tabs > li.active > a:hover {
+  background-color: #b71708;
+  color: #FFFFFF; }
 
 .tab-pane {
   padding: 14px; }
