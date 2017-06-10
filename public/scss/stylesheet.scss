@@ -45,8 +45,12 @@ nav {
     cursor: default !important;
 }
 
+.table tr.Colours {
+  color: $pink !important;
+}
+
 // BLACK & WHITE
-.table tr.Black, .table tr.White, .table tr.Colours {
+.table tr.Black, .table tr.White {
   color: $black !important;
 }
 

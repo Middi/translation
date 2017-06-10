@@ -61,7 +61,10 @@ nav {
   transition: all 0.4s ease;
   cursor: default !important; }
 
-.table tr.Black, .table tr.White, .table tr.Colours {
+.table tr.Colours {
+  color: #F06292 !important; }
+
+.table tr.Black, .table tr.White {
   color: #212121 !important; }
 
 .table tr.Red, .red {
