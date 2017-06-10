@@ -1,0 +1,42 @@
+html {
+    font-size: 12px
+}
+
+body {
+    font-family: 'Open Sans';
+    line-height: 1.2;
+}
+
+//--------------------------------
+// Headings
+//--------------------------------
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    color: $black;
+}
+
+h1 {
+    font-size: 1.6em;
+    font-weight: 300;
+    line-height: 1;
+    color: $White;
+    margin: 0;
+}
+
+h1 span {
+    font-weight: 700;
+    color: $White;
+}
+
+a {
+    color: $white;
+}
+
+h1 a span {
+    font-weight: 700;
+    color: $White!important;
+}
