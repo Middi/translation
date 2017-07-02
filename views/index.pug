@@ -17,6 +17,8 @@ block content
             li(role='presentation')
                 a(href='#pleasantries', aria-controls='settings', role='tab', data-toggle='tab') Pleasantries
             li(role='presentation')
+                a(href='#directions', aria-controls='settings', role='tab', data-toggle='tab') Directions
+            li(role='presentation')
                 a(href='#misc', aria-controls='settings', role='tab', data-toggle='tab') Misc
         // Tab panes
         .tab-content
@@ -110,6 +112,21 @@ block content
                                         td= datas.english
                                         td= datas.polish
                                         td= datas.phonetic
+            #directions.tab-pane(role='tabpanel')
+                .panel.panel-default
+                    table.table.table-bordered.table-striped
+                        thead
+                            tr
+                                th English
+                                th Polish
+                                th Phonetics
+                        tbody
+                            each datas, i in data.sort({cat_id})
+                                if datas.category =='Directions'
+                                    tr
+                                        td= datas.english
+                                        td= datas.polish
+                                        td= datas.phonetic
             #misc.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
@@ -125,66 +142,3 @@ block content
                                         td= datas.english
                                         td= datas.polish
                                         td= datas.phonetic
-
-
-        //- .ui.top.attached.tabular.menu
-        //-     a.item.active(data-tab='first') Colors
-        //-     a.item(data-tab='second') Days
-        //-     a.item(data-tab='third') Months
-        //-     a.item(data-tab='fourth') Numbers
-        //- .ui.bottom.attached.tab.segment.active(data-tab='first')
-        //-     table.ui.striped.table.selectable.celled.fixed.single.line
-        //-         thead
-        //-             tr
-        //-                 th English
-        //-                 th Polish
-        //-                 th Phonetics
-        //-         tbody
-        //-             each datas, i in data
-        //-                 if datas.category =='Colors'
-        //-                     tr(class=datas.english)
-        //-                         td= datas.english
-        //-                         td= datas.polish
-        //-                         td= datas.phonetic
-        //- .ui.bottom.attached.tab.segment(data-tab='second')
-        //-     table.ui.striped.table.selectable.celled.fixed.single.line
-        //-         thead
-        //-             tr
-        //-                 th English
-        //-                 th Polish
-        //-                 th Phonetics
-        //-         tbody
-        //-             each datas, i in data
-        //-                 if datas.category =='Days'
-        //-                     tr
-        //-                         td= datas.english
-        //-                         td= datas.polish
-        //-                         td= datas.phonetic
-        //- .ui.bottom.attached.tab.segment(data-tab='third')
-        //-     table.ui.striped.table.selectable.celled.fixed.single.line
-        //-         thead
-        //-             tr
-        //-                 th English
-        //-                 th Polish
-        //-                 th Phonetics
-        //-         tbody
-        //-             each datas, i in data
-        //-                 if datas.category =='Months'
-        //-                     tr
-        //-                         td= datas.english
-        //-                         td= datas.polish
-        //-                         td= datas.phonetic
-        //- .ui.bottom.attached.tab.segment(data-tab='fourth')
-        //-     table.ui.striped.table.selectable.celled.fixed.single.line
-        //-         thead
-        //-             tr
-        //-                 th English
-        //-                 th Polish
-        //-                 th Phonetics
-        //-         tbody
-        //-             each datas, i in data
-        //-                 if datas.category =='Days'
-        //-                     tr
-        //-                         td= datas.english
-        //-                         td= datas.polish
-        //-                         td= datas.phonetic

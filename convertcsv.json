@@ -1,1 +1,1 @@
-db.polish.insertMany([{"polish":"Cześć","english":"Hello","phonetic":"Chessc","category":"Pleasantries","cat_id":1},{"polish":"dobranoc","english":"Goodnight","phonetic":"DohBraNock","category":"Pleasantries","cat_id":2},{"polish":"Dzień dobry","english":"Good day","phonetic":"DJen DoBree","category":"Pleasantries","cat_id":3}]);
+{"polish":"Przepraszam","english":"Excuse me","phonetic":"Shh pra sham","category":"Pleasantries","cat_id":6}

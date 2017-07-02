@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+var expressSanitizer = require("express-sanitizer");
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
@@ -12,6 +13,7 @@ mongoose.connect("mongodb://middi:youandme123@ds163701.mlab.com:63701/translatio
 app.set("view engine", "pug");
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(expressSanitizer());
 
 // Set Public Folder
 app.use(express.static(path.join(__dirname, 'public')));
