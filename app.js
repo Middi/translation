@@ -33,7 +33,7 @@ var Trans = mongoose.model("polish", transSchema);
 
 app.get('/', function(req, res){
     Trans.find(function(err, data) {
-    res.render('index', {data: data});
+        res.render('index', {data: data});
     });
 });
 
@@ -45,10 +45,9 @@ app.get('/new', function(req, res){
 });
 
 // CREATE ROUTE
-app.post("/", function(req, res){
-    
-    // Create Blog
-    Trans.create(req.body.trans, function(err, newBlog){
+app.post("/entry", function(req, res){
+    // Create Entry
+    Trans.create(req.body.trans, function(err, newEntry){
         if(err){
             res.render("new");
         }
@@ -57,6 +56,7 @@ app.post("/", function(req, res){
         }
     })
 });
+
 // Start Server
 app.listen(port, function () {
     console.log('server started on port 3000');
