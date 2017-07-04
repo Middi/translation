@@ -149,3 +149,21 @@ table {
     table-layout: fixed;
     word-wrap: break-word;
 }
+
+
+#newform {
+    margin: 100px 50px;
+}
+
+
+ .btn-red {
+     background-color: $brand;
+     color: $white;   
+     transition: all 0.4s ease; 
+     border: 2px solid $brand;
+     font-weight: 600;
+     &:hover {
+              color: $brand;
+              background-color: darken($white, 1);
+         }
+ }

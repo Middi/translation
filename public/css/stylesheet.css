@@ -136,3 +136,16 @@ table thead tr th {
 table {
   table-layout: fixed;
   word-wrap: break-word; }
+
+#newform {
+  margin: 100px 50px; }
+
+.btn-red {
+  background-color: #c11808;
+  color: #FFFFFF;
+  transition: all 0.4s ease;
+  border: 2px solid #c11808;
+  font-weight: 600; }
+  .btn-red:hover {
+    color: #c11808;
+    background-color: #fcfcfc; }
