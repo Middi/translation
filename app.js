@@ -39,7 +39,9 @@ app.get('/', function(req, res){
 
 
 app.get('/new', function(req, res){
-    res.render('new');
+    Trans.find( { category: "Directions" }, function(err, data) {
+        res.render('new', {data: data});
+    });
 });
 
 // CREATE ROUTE
