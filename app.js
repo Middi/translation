@@ -49,10 +49,10 @@ app.post("/entry", function(req, res){
     // Create Entry
     Trans.create(req.body.trans, function(err, newEntry){
         if(err){
-            res.render("new");
+            res.render("/");
         }
         else {
-            res.redirect("/");
+            res.redirect("/new");
         }
     })
 });
