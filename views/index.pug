@@ -19,6 +19,8 @@ block content
             li(role='presentation')
                 a(href='#directions', aria-controls='settings', role='tab', data-toggle='tab') Directions
             li(role='presentation')
+                a(href='#directions', aria-controls='settings', role='tab', data-toggle='tab') People
+            li(role='presentation')
                 a(href='#misc', aria-controls='settings', role='tab', data-toggle='tab') Misc
         // Tab panes
         .tab-content
@@ -127,6 +129,21 @@ block content
                                         td= datas.english
                                         td= datas.polish
                                         td= datas.phonetic
+            #people.tab-pane(role='tabpanel')
+                            .panel.panel-default
+                                table.table.table-bordered.table-striped
+                                    thead
+                                        tr
+                                            th English
+                                            th Polish
+                                            th Phonetics
+                                    tbody
+                                        each datas, i in data.sort({cat_id})
+                                            if datas.category =='People'
+                                                tr
+                                                    td= datas.english
+                                                    td= datas.polish
+                                                    td= datas.phonetic
             #misc.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
