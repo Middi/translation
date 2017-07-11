@@ -39,6 +39,12 @@ h1 {
 .navvie {
   padding: 0 40px; }
 
+.navbar-brand > img {
+  display: inline-block;
+  width: 30px;
+  height: auto;
+  margin: 0 4px 1px; }
+
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border: none; }
 
