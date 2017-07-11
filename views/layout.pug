@@ -10,7 +10,7 @@ html(lang="pl")
     body
         // Static navbar
         nav.navbar.navbar-default.navbar-static-top
-            .container
+            .container.navvie
                 .navbar-header
                     button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
                         span.sr-only Toggle navigation
@@ -30,13 +30,15 @@ html(lang="pl")
                             li
                                 a(href='/new') Middi
                             li
-                                a(href='/new') +
+                                a(href='/new')
+                                    i.fa.fa-plus-circle.fa-lg(aria-hidden="true")
                 // /.nav-collapse
 
 
                     
         main
             block content
+        link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
         script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
         script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
         script(src='/js/main.js')

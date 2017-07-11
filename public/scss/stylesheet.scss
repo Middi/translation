@@ -7,10 +7,23 @@
 .navbar-default {
     background-color: rgba(193, 24, 8, 1.0);
 }
-// header {
-//     width: 100%;
-//     background-color: rgba(193, 24, 8, 1.0);
-// }
+
+.navvie {
+    padding: 0 40px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $white;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: darken($brand, 5);
+}
+
 
 // nav {
 //     padding: 12px;
