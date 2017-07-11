@@ -16,7 +16,15 @@ html(lang="pl")
                         img(src="/images/flag.png")
                         | Polski
                         span Reference
-
+                ul
+                    if !currentUser
+                        li
+                            a(href='/login').pull-right Login
+                    else
+                        li
+                            a(href='/new').pull-right Middi
+                        li
+                            a(href='/new').pull-right +
         main
             block content
         script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
