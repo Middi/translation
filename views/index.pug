@@ -4,6 +4,10 @@ block content
     .container.container-main
         // Nav tabs
         ul.nav.nav-tabs(role='tablist')
+            if currentUser
+                li.active-plus
+                    a(href='/new')
+                        i.fa.fa-plus.fa-lg(aria-hidden="true")
             li.active(role='presentation')
                 a(href='#numbers', aria-controls='home', role='tab', data-toggle='tab') Numbers
             li(role='presentation')

@@ -33,6 +33,9 @@ h1 {
 .navbar-default .navbar-nav > li > a:hover {
   color: #e6e5e5; }
 
+.fa {
+  color: #c11808; }
+
 .navbar-default {
   background-color: #c11808; }
 
@@ -128,6 +131,15 @@ h1 {
   border-bottom: 1px solid #c11808;
   background-color: #c11808;
   color: #FFFFFF; }
+
+.active-plus {
+  background-color: #E0E0E0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.nav > li.active-plus > a:hover {
+  background-color: #E0E0E0;
+  border-color: #E0E0E0; }
 
 .tab-pane {
   padding: 14px; }
