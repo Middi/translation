@@ -4,13 +4,7 @@
 
 // ---- Nav Bar ---- /
 
-.navbar-default {
-    background-color: rgba(193, 24, 8, 1.0);
-}
-
-.navvie {
-    padding: 0 40px;
-}
+.navbar-default {background-color: $brand}
 
 .navbar-brand>img {
     display: inline-block;
@@ -19,25 +13,19 @@
     margin: 0 4px 1px;
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border: none;
-}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {border: none}
 
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: $white;
-}
+.navbar-default .navbar-toggle .icon-bar {background-color: $white}
 
-.navbar-default .navbar-toggle:hover {
-    background-color: darken($brand, 5);
-}
+.navbar-default .navbar-toggle:hover {background-color: darken($brand, 5)}
 
 .container-main {
     margin-top: 60px;
     margin-bottom: 160px;
 }
 
-// --- TABLE COLOURED --- //
 
+// --- TABLE COLOURED --- //
 
 .table tr.White,
 .table tr.Black,
@@ -54,49 +42,28 @@
     cursor: default !important;
 }
 
-.table tr.Colours {
-  color: $pink !important;
-}
+.table tr.Colours {color: $pink !important}
 
 // BLACK & WHITE
-.table tr.Black, .table tr.White {
-  color: $black !important;
-}
-
+.table tr.Black, .table tr.White {color: $black !important}
 
 // RED
-.table tr.Red, .red {
-  color: $red !important;
-}
-
+.table tr.Red, .red {color: $red !important}
 
 // YELLOW
-.table tr.Yellow, .yellow {
-  color: darken($yellow, 25) !important;
-}
-
+.table tr.Yellow, .yellow {color: darken($yellow, 25) !important}
 
 // GREEN
-.table tr.Green, .green {
-  color: $green !important;
-}
+.table tr.Green, .green {color: $green !important}
 
 // BLUE
-.table tr.Blue, .blue {
-   color: $blue !important;
-}
-
+.table tr.Blue, .blue {color: $blue !important}
 
 // ORANGE
-.table tr.Orange, .orange {
- color: $orange !important;
-}
-
+.table tr.Orange, .orange {color: $orange !important}
 
 // GREY
-.table tr.Grey, .grey {
-  color: darken($grey, 30) !important;
-}
+.table tr.Grey, .grey {color: darken($grey, 30) !important}
 
 
 .nav-tabs {
@@ -104,16 +71,14 @@
     overflow-y: hidden;
     display: -webkit-box;  
     display: -moz-box;
-  }
+}
+
 .nav-tabs>li {
       float:none;
       margin-left: -1px;
-    }
-
-
-.nav-tabs>li>a {
-    color: $black;
 }
+
+.nav-tabs>li>a {color: $black}
 
 .nav-tabs>li.active>a {
     color: $white;
@@ -127,7 +92,6 @@
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
-
     color: $white;
     font-weight: 500;border: none;
     border-bottom: 1px solid lighten(rgba(193, 24, 8, 1.0),3);
@@ -140,9 +104,7 @@
     color: $white;
 }
 
-.tab-pane {
-    padding: 14px;
-}
+.tab-pane {padding: 14px}
 
 .tab-content {
     border: 1px solid $grey;
@@ -150,29 +112,27 @@
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 }
-table thead tr th {
-    padding: 20px 10px !important;
-}
+
+table thead tr th {padding: 20px 10px !important}
 
 table {
     table-layout: fixed;
     word-wrap: break-word;
 }
 
+#newform {margin: 50px}
 
-#newform {
-    margin: 60px 50px;
+.btn-red {
+    background-color: $brand;
+    color: $white;   
+    transition: all 0.4s ease; 
+    border: 2px solid $brand;
+    font-weight: 600;
+    &:hover {
+            color: $brand;
+            background-color: darken($white, 1);
+        }
 }
 
 
- .btn-red {
-     background-color: $brand;
-     color: $white;   
-     transition: all 0.4s ease; 
-     border: 2px solid $brand;
-     font-weight: 600;
-     &:hover {
-              color: $brand;
-              background-color: darken($white, 1);
-         }
- }
+@import "media-queries";

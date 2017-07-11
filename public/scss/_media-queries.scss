@@ -1,34 +1,6 @@
-/* -- BREAK 1 -- */
-@media only screen and (max-width: 1200px) {
-.list {
-  	min-width:916px;
-}
-}
+@media only screen and (min-width: 767px) {
 
-/* -- BREAK 1 -- */
-@media only screen and (max-width: 990px) {
-.list {
-  	min-width:696px;
-}
-}
-
-/* -- BREAK 1 -- */
-@media only screen and (max-width: 767px) {
-.list {
-  	min-width:96.7%;
-}
-}
-
-/* -- BREAK 1 -- */
-@media only screen and (max-width: 710px) {
-.list {
-  	min-width:96.4%;
-}
-}
-
-/* -- BREAK 1 -- */
-@media only screen and (max-width: 635px) {
-.list {
-    border: none;
-}
+.navvie {
+    padding: 0 40px;
+	}
 }

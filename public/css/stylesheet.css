@@ -36,9 +36,6 @@ h1 {
 .navbar-default {
   background-color: #c11808; }
 
-.navvie {
-  padding: 0 40px; }
-
 .navbar-brand > img {
   display: inline-block;
   width: 30px;
@@ -149,7 +146,7 @@ table {
   word-wrap: break-word; }
 
 #newform {
-  margin: 60px 50px; }
+  margin: 50px; }
 
 .btn-red {
   background-color: #c11808;
@@ -160,3 +157,7 @@ table {
   .btn-red:hover {
     color: #c11808;
     background-color: #fcfcfc; }
+
+@media only screen and (min-width: 767px) {
+  .navvie {
+    padding: 0 40px; } }
