@@ -25,15 +25,18 @@ h1 {
     margin: 0;
 }
 
-a {
+.navbar-default .navbar-brand {
     color: $white;
     &:hover {
         color: $white;
         text-decoration: none;
     }
-}
-
-h1 span {
+    span {
     font-weight: 600;
     color: $white!important;
+}
+}
+
+.navbar-default .navbar-nav>li>a {
+        color: $white;
 }

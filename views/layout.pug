@@ -8,23 +8,33 @@ html(lang="pl")
 
         link(rel='stylesheet' href='css/stylesheet.css')
     body
-        // HEADER
-        header
-            nav
-                h1.logo
-                    a(href='/')
-                        img(src="/images/flag.png")
+        // Static navbar
+        nav.navbar.navbar-default.navbar-static-top
+            .container
+                .navbar-header
+                    button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='/')
+                        //- img(src="/images/flag.png")
                         | Polski
                         span Reference
-                ul
-                    if !currentUser
-                        li
-                            a(href='/login').pull-right Login
-                    else
-                        li
-                            a(href='/new').pull-right Middi
-                        li
-                            a(href='/new').pull-right +
+                #navbar.navbar-collapse.collapse
+                    ul.nav.navbar-nav.navbar-right
+                        if !currentUser
+                            li
+                                a(href='/login') Login
+                        else
+                            li
+                                a(href='/new') Middi
+                            li
+                                a(href='/new') +
+                // /.nav-collapse
+
+
+                    
         main
             block content
         script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
