@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const expressSanitizer = require("express-sanitizer");
+const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 var passport = require('passport');
 var LocalStrategy = require('passport-local');
@@ -12,8 +13,14 @@ var User = require("./models/user");
 
 var port = process.env.PORT || 3000;
 
+
+/**
+ * Load environment variables from .env file, where API keys and passwords are configured.
+ */
+dotenv.load({ path: '.env' });
+
 // APP CONFIG
-mongoose.connect("mongodb://middi:youandme123@ds163701.mlab.com:63701/translation");
+mongoose.connect(process.env.MONGO_URL);
 app.set("view engine", "pug");
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended: true}));
