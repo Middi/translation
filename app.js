@@ -123,7 +123,6 @@ function isLoggedIn(req, res, next){
 }
 
 
-
 // Start Server
 app.listen(port, function () {
     console.log('server started on port 3000');
