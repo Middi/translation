@@ -36,18 +36,13 @@ block content
                                 th English
                                 th Polish
                                 th Phonetics
-                                if currentUser
-                                    th.edit Edit
                         tbody
                             each datas, i in data.sort({cat_id})
-                                if datas.category == 'Numbers' && datas.polish
+                                if datas.category =='Numbers'
                                     tr
                                         td= datas.english
                                         td= datas.polish
                                         td= datas.phonetic
-                                        if currentUser
-                                            td
-                                                a(href="/edit/"+datas._id) edit
             #times.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
@@ -56,18 +51,13 @@ block content
                                 th English
                                 th Polish
                                 th Phonetics
-                                if currentUser
-                                    th.edit Edit
                         tbody
                             each datas, i in data.sort({cat_id})
-                                if datas.category =='Time' && datas.polish
+                                if datas.category =='Time'
                                     tr
                                         td= datas.english
                                         td= datas.polish
                                         td= datas.phonetic
-                                        if currentUser
-                                            td
-                                                a(href="/edit/"+datas._id) edit
             #days.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
@@ -76,18 +66,13 @@ block content
                                 th English
                                 th Polish
                                 th Phonetics
-                                if currentUser
-                                    th.edit Edit
                         tbody
                             each datas, i in data.sort({cat_id})
-                                if datas.category =='Days' && datas.polish
+                                if datas.category =='Days'
                                     tr
                                         td= datas.english
                                         td= datas.polish
                                         td= datas.phonetic
-                                        if currentUser
-                                            td
-                                                a(href="/edit/"+datas._id) edit
             #months.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
@@ -96,18 +81,13 @@ block content
                                 th English
                                 th Polish
                                 th Phonetics
-                                if currentUser
-                                    th.edit Edit
                         tbody
                             each datas, i in data.sort({cat_id})
-                                if datas.category =='Months' && datas.polish
+                                if datas.category =='Months'
                                     tr
                                         td= datas.english
                                         td= datas.polish
                                         td= datas.phonetic
-                                        if currentUser
-                                            td
-                                                a(href="/edit/"+datas._id) edit
             #colours.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
@@ -116,18 +96,13 @@ block content
                                 th English
                                 th Polish
                                 th Phonetics
-                                if currentUser
-                                    th.edit Edit
                         tbody
                             each datas, i in data.sort({cat_id})
-                                if datas.category =='Colors' && datas.polish
+                                if datas.category =='Colors'
                                     tr(class=datas.english)
                                         td= datas.english
                                         td= datas.polish
                                         td= datas.phonetic
-                                        if currentUser
-                                            td
-                                                a(href="/edit/"+datas._id) edit
             #pleasantries.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
@@ -136,18 +111,13 @@ block content
                                 th English
                                 th Polish
                                 th Phonetics
-                                if currentUser
-                                    th.edit Edit
                         tbody
                             each datas, i in data.sort({cat_id})
-                                if datas.category =='Pleasantries' && datas.polish
+                                if datas.category =='Pleasantries'
                                     tr
                                         td= datas.english
                                         td= datas.polish
                                         td= datas.phonetic
-                                        if currentUser
-                                            td
-                                                a(href="/edit/"+datas._id) edit
             #directions.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
@@ -156,18 +126,13 @@ block content
                                 th English
                                 th Polish
                                 th Phonetics
-                                if currentUser
-                                    th.edit Edit
                         tbody
                             each datas, i in data.sort({cat_id})
-                                if datas.category =='Directions' && datas.polish
+                                if datas.category =='Directions'
                                     tr
                                         td= datas.english
                                         td= datas.polish
                                         td= datas.phonetic
-                                        if currentUser
-                                            td
-                                                a(href="/edit/"+datas._id) edit
             #people.tab-pane(role='tabpanel')
                             .panel.panel-default
                                 table.table.table-bordered.table-striped
@@ -176,18 +141,13 @@ block content
                                             th English
                                             th Polish
                                             th Phonetics
-                                            if currentUser
-                                                th.edit Edit
                                     tbody
                                         each datas, i in data.sort({cat_id})
-                                            if datas.category =='People' && datas.polish
+                                            if datas.category =='People'
                                                 tr
                                                     td= datas.english
                                                     td= datas.polish
                                                     td= datas.phonetic
-                                                    if currentUser
-                                                        td
-                                                            a(href="/edit/"+datas._id) edit
             #misc.tab-pane(role='tabpanel')
                 .panel.panel-default
                     table.table.table-bordered.table-striped
@@ -196,15 +156,10 @@ block content
                                 th English
                                 th Polish
                                 th Phonetics
-                                if currentUser
-                                    th.edit Edit
                         tbody
                             each datas, i in data.sort({cat_id})
-                                if datas.category =='Misc' && datas.polish
+                                if datas.category =='Misc'
                                     tr
                                         td= datas.english
                                         td= datas.polish
                                         td= datas.phonetic
-                                        if currentUser
-                                            td
-                                                a(href="/edit/"+datas._id) edit
