@@ -34,18 +34,16 @@ block content
                         thead
                             tr
                                 th English
-                                th Polish
-                                th Phonetics
+                                th Norwegian
                                 if currentUser
                                     th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category == 'Numbers' && datas.polish
+                            each datas, i in data
+                                if datas.category =='Numbers' && datas.norwegian
                                     tr
                                         td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
-                                        if currentUser
+                                        td= datas.norwegian
+                                         if currentUser
                                             td
                                                 a(href="/edit/"+datas._id) edit
             #times.tab-pane(role='tabpanel')
@@ -54,18 +52,16 @@ block content
                         thead
                             tr
                                 th English
-                                th Polish
-                                th Phonetics
+                                th Norwegian
                                 if currentUser
                                     th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category =='Time' && datas.polish
+                            each datas, i in data
+                                if datas.category =='Time' && datas.norwegian
                                     tr
                                         td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
-                                        if currentUser
+                                        td= datas.norwegian
+                                         if currentUser
                                             td
                                                 a(href="/edit/"+datas._id) edit
             #days.tab-pane(role='tabpanel')
@@ -74,18 +70,16 @@ block content
                         thead
                             tr
                                 th English
-                                th Polish
-                                th Phonetics
+                                th Norwegian
                                 if currentUser
                                     th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category =='Days' && datas.polish
+                            each datas, i in data
+                                if datas.category =='Days' && datas.norwegian
                                     tr
                                         td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
-                                        if currentUser
+                                        td= datas.norwegian
+                                         if currentUser
                                             td
                                                 a(href="/edit/"+datas._id) edit
             #months.tab-pane(role='tabpanel')
@@ -94,18 +88,16 @@ block content
                         thead
                             tr
                                 th English
-                                th Polish
-                                th Phonetics
+                                th Norwegian
                                 if currentUser
                                     th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category =='Months' && datas.polish
+                            each datas, i in data
+                                if datas.category =='Months' && datas.norwegian
                                     tr
                                         td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
-                                        if currentUser
+                                        td= datas.norwegian
+                                         if currentUser
                                             td
                                                 a(href="/edit/"+datas._id) edit
             #colours.tab-pane(role='tabpanel')
@@ -114,18 +106,16 @@ block content
                         thead
                             tr
                                 th English
-                                th Polish
-                                th Phonetics
+                                th Norwegian
                                 if currentUser
                                     th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category =='Colors' && datas.polish
+                            each datas, i in data
+                                if datas.category =='Colors' && datas.norwegian
                                     tr(class=datas.english)
                                         td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
-                                        if currentUser
+                                        td= datas.norwegian
+                                         if currentUser
                                             td
                                                 a(href="/edit/"+datas._id) edit
             #pleasantries.tab-pane(role='tabpanel')
@@ -134,18 +124,16 @@ block content
                         thead
                             tr
                                 th English
-                                th Polish
-                                th Phonetics
+                                th Norwegian
                                 if currentUser
                                     th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category =='Pleasantries' && datas.polish
+                            each datas, i in data
+                                if datas.category =='Pleasantries' && datas.norwegian
                                     tr
                                         td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
-                                        if currentUser
+                                        td= datas.norwegian
+                                         if currentUser
                                             td
                                                 a(href="/edit/"+datas._id) edit
             #directions.tab-pane(role='tabpanel')
@@ -154,17 +142,15 @@ block content
                         thead
                             tr
                                 th English
-                                th Polish
-                                th Phonetics
+                                th Norwegian
                                 if currentUser
                                     th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category =='Directions' && datas.polish
+                            each datas, i in data
+                                if datas.category =='Directions' && datas.norwegian
                                     tr
                                         td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
+                                        td= datas.norwegian 
                                         if currentUser
                                             td
                                                 a(href="/edit/"+datas._id) edit
@@ -174,18 +160,16 @@ block content
                                     thead
                                         tr
                                             th English
-                                            th Polish
-                                            th Phonetics
+                                            th Norwegian
                                             if currentUser
-                                                th.edit Edit
+                                    th.edit Edit
                                     tbody
-                                        each datas, i in data.sort({cat_id})
-                                            if datas.category =='People' && datas.polish
+                                        each datas, i in data
+                                            if datas.category =='People' && datas.norwegian
                                                 tr
                                                     td= datas.english
-                                                    td= datas.polish
-                                                    td= datas.phonetic
-                                                    if currentUser
+                                                    td= datas.norwegian
+                                                     if currentUser
                                                         td
                                                             a(href="/edit/"+datas._id) edit
             #misc.tab-pane(role='tabpanel')
@@ -194,17 +178,15 @@ block content
                         thead
                             tr
                                 th English
-                                th Polish
-                                th Phonetics
+                                th Norwegian
                                 if currentUser
                                     th.edit Edit
                         tbody
-                            each datas, i in data.sort({cat_id})
-                                if datas.category =='Misc' && datas.polish
+                            each datas, i in data
+                                if datas.category =='Misc' && datas.norwegian
                                     tr
                                         td= datas.english
-                                        td= datas.polish
-                                        td= datas.phonetic
+                                        td= datas.norwegian 
                                         if currentUser
                                             td
                                                 a(href="/edit/"+datas._id) edit

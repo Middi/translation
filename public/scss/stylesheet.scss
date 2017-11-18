@@ -8,9 +8,9 @@
 
 .navbar-brand>img {
     display: inline-block;
-    width: 30px;
+    width: 24px;
     height: auto;
-    margin: 0 4px 1px;
+    margin: 0 4px 2px;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {border: none}
@@ -19,10 +19,20 @@
 
 .navbar-default .navbar-toggle:hover {background-color: darken($brand, 5)}
 
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: white;
+
+}
+
 .container-main {
     margin-top: 60px;
     margin-bottom: 160px;
 }
+
+.container {
+    max-width: 1000px;
+}
+
 
 
 // --- TABLE COLOURED --- //
@@ -131,6 +141,10 @@ table thead tr th {padding: 20px 10px !important}
 table {
     table-layout: fixed;
     word-wrap: break-word;
+}
+
+.edit {
+    width: 80px;
 }
 
 #newform {margin: 50px}

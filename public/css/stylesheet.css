@@ -41,9 +41,9 @@ h1 {
 
 .navbar-brand > img {
   display: inline-block;
-  width: 30px;
+  width: 24px;
   height: auto;
-  margin: 0 4px 1px; }
+  margin: 0 4px 2px; }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border: none; }
@@ -54,9 +54,15 @@ h1 {
 .navbar-default .navbar-toggle:hover {
   background-color: #a91507; }
 
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  background-color: white; }
+
 .container-main {
   margin-top: 60px;
   margin-bottom: 160px; }
+
+.container {
+  max-width: 1000px; }
 
 .table tr.White,
 .table tr.Black,
@@ -156,6 +162,9 @@ table thead tr th {
 table {
   table-layout: fixed;
   word-wrap: break-word; }
+
+.edit {
+  width: 80px; }
 
 #newform {
   margin: 50px; }
