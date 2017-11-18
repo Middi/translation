@@ -61,8 +61,7 @@ var transSchema = new mongoose.Schema({
     english: String,
     phonetic: String,
     category: String,
-    cat_id: Number,
-    norwegian: String
+    cat_id: Number
 }, {collection: 'polish'});
 
 var Trans = mongoose.model("polish", transSchema);
@@ -81,7 +80,6 @@ app.get('/new', isLoggedIn, function(req, res){
     });
 });
 
-
 // CREATE ROUTE
 app.post("/entry", function(req, res){
     // Create Entry
@@ -93,45 +91,6 @@ app.post("/entry", function(req, res){
             res.redirect("/new");
         }
     })
-});
-
-app.get('/norwegian', function(req, res){
-    Trans.find(function(err, data) {
-        res.render('norwegian', {data: data});
-    }).sort({ cat_id: 1});
-});
-
-// Load Edit Form
-app.get('/edit/:id', function (req, res) {
-    Trans.findById(req.params.id, function (err, article) {
-        res.render('edit', {
-            article: article
-        });
-    });
-});
-
-
-// Update Submit POST Route
-app.post('/edit/:id', function (req, res) {
-    let article = {};
-    article.polish = req.body.polish;
-    article.norwegian = req.body.norwegian;
-    article.english = req.body.english;
-    article.phonetic = req.body.phonetic;
-    article.category = req.body.category;
-    article.cat_id = req.body.cat_id;
-
-    let query = { _id: req.params.id };
-
-    Trans.update(query, article, function (err) {
-        if (err) {
-            console.log(err);
-            return;
-        }
-        else {
-            res.redirect('/');
-        }
-    });
 });
 
 
@@ -162,11 +121,6 @@ function isLoggedIn(req, res, next){
     }
     res.redirect("/login");
 }
-
-
-
-
-
 
 // Start Server
 app.listen(port, function () {
